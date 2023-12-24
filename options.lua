@@ -6,7 +6,21 @@ return {
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    wrap = true, -- sets vim.opt.wrap
+    --backup = false, -- creates a backup file
+    encoding = "utf-8",
+    linebreak = true,
+    list = true,
+    listchars = { tab = "> ", trail = "·", extends = ">", precedes = "<", nbsp = "-", eol = "↵" },
+    scrolloff = 2, -- Number of lines to keep above and below the cursor
+    shiftwidth = 2, -- Number of space inserted for indentation
+    showtabline = 2, -- always display tabline
+    sidescrolloff = 4, -- Number of columns to keep at the sides of the cursor
+    smartindent = true, -- make indenting smarter again
+    --swapfile = false, -- creates a swapfile
+    tabstop = 2, -- Number of space in a tab
+    smarttab = true,
+    --showcmd = false -- hide (partial) command in the last line of the screen (for performance)
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
