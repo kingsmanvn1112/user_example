@@ -161,6 +161,9 @@ return {
 	      autocmd FileType cpp nnoremap <leader>mr :!./%:r.out<CR>
       augroup END
 
+      " Search && replace selected text
+      vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
       " options
       " choose between 'vertical' and 'horizontal' for how the terminal window is split
       " (default is horizontal)
